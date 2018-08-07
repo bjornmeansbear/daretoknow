@@ -1,22 +1,26 @@
-.gradient-inner a{
-	cursor: pointer;
+.gradient-inner a {
+	text-decoration: none;
+	color:white;
 }
 .gradient-inner a:hover {
-    color: red;
+  color: red;
 }
-.gradient-inner span {
-    display: none;
+.gradient-inner a i {
+  display: none;
+	font-style: normal;
 }
-.gradient-inner a:hover span {
-    display: inline;
+.gradient-inner a:hover i {
+  display: initial;
 }
-.gradient-inner img {
-    display: none;
-    width:40px;
-    height:40px;
+.gradient-inner a img {
+  display: none;
+  width:.8em;
+  height:.8em;
 }
 .gradient-inner a:hover img {
-    display: inline;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: .15em;
 }
 
 
@@ -242,23 +246,18 @@ p {
 }
 
 .gradient-wrapper {
-  height: 500px;
+  height: 75vh;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
+
 .gradient-inner {
-  height: 500px;
+  height: 75vh;
   width: 100%;
   overflow:scroll;
   position: relative;
   z-index: 1;
-}
-
-.overflow {
-    height: 500px;
-    width: 100%;
-    overflow:scroll;
 }
 
 .herbert {
