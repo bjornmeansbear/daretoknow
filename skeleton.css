@@ -10,14 +10,16 @@
 	font-style: normal;
 }
 .gradient-inner a:hover i {
-  display: initial;
+  display: inline;
 }
-.gradient-inner a img {
+.gradient-inner a img,
+.speaker img {
   display: none;
   width:.8em;
   height:.8em;
 }
-.gradient-inner a:hover img {
+.gradient-inner a:hover img,
+.speaker h2:hover img {
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: .15em;
@@ -265,30 +267,22 @@ p {
     width: 300px
 }
 
-.speaker a{
+/** speaker stuff edited w/ html */
+
+.speaker h2 {
 	cursor: pointer;
 }
-.speaker a:hover {
-    color: white;
+.speaker h2:hover {
+    color: red;
 }
-.speaker span {
+.speaker h2 span.info {
     display: none;
 }
-.speaker a:hover span {
-    display: inline;
-}
-.speaker img {
-    display: none;
-    width:40px;
-    height:40px;
-}
-.speaker a:hover img {
+.speaker h2:hover span.info {
     display: inline;
 }
 
-.speaker a:hover h2 {
-    color: red;
-}
+
 
 
 /* Links
