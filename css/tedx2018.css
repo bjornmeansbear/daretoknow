@@ -16,9 +16,8 @@
   font-size:.9em;
 }
 
-.plr {
-  padding-left: 4vw;
-  padding-right: 4vw;
+.pad {
+  padding: 4vw;
 }
 
 h2.dingbatify {
@@ -29,4 +28,77 @@ h2.dingbatify {
   margin: 0;
   padding:0;
   list-style: none;
+}
+
+.gradient {
+  box-shadow:inset 0px 0px 400px rgba(0,0,0,1);
+  background-image: url(gradientAttempt.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  height: 100%;
+  width: 200%;
+  margin-left: -50%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gradient-wrapper {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-inner {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.scroller {
+  overflow:scroll;
+}
+
+.gradient-inner a {
+	text-decoration: none;
+	color:white;
+}
+.gradient-inner a:hover {
+  color: red;
+}
+.gradient-inner a i {
+  display: none;
+	font-style: normal;
+}
+.gradient-inner a:hover i {
+  display: inline;
+}
+.gradient-inner a img,
+.speaker img {
+  display: none;
+  width:.8em;
+  height:.8em;
+}
+.gradient-inner a:hover img,
+.speaker h2:hover img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: .15em;
+}
+
+/** speaker stuff edited w/ html */
+
+.speaker h2 {
+	cursor: pointer;
+}
+.speaker h2:hover {
+    color: red;
+}
+.speaker h2 span.info {
+    display: none;
+}
+.speaker h2:hover span.info {
+    display: inline;
 }
