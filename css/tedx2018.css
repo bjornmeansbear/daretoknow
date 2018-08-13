@@ -5,7 +5,25 @@
   src: url('Tedxsanfrancisco_Speaker_Series.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'dingbats2';
+  font-style: normal;
+  font-weight: normal;
+  src: url('TedX_SanFran_SpeakerDingbats-Regular.woff2') format('woff2');
+}
+
 .dingbat {
+  font-family: 'dingbats';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:red;
+  line-height:inherit;
+  font-size:.9em;
+}
+
+.dingbat2 {
   font-family: 'dingbats';
   font-size: inherit;
   text-rendering: auto;
