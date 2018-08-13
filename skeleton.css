@@ -217,6 +217,24 @@ p {
     width: 300px
 }
 
+@font-face {
+  font-family: 'dingbats2';
+  font-style: normal;
+  font-weight: normal;
+  src: url('TedX_SanFran_SpeakerDingbats-Regular.woff2') format('woff2');
+}
+
+.dingbat2 {
+  font-family: 'dingbat2';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:red;
+  line-height:inherit;
+  font-size:.9em;
+
+
 
 
 
