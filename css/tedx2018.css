@@ -120,3 +120,8 @@ h2.dingbatify {
 .speaker h2:hover span.info {
     display: inline;
 }
+
+.SpeakersList li {
+  width: 100%;
+  display: inline-block;
+}
