@@ -1,0 +1,20 @@
+.logo-bar {
+  display: flex;
+}
+
+.logo-container {
+  position: relative;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.logo-container img {
+  position: relative;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flex-container {
+  display: flex;
+}
