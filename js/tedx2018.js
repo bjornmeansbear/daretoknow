@@ -50,3 +50,14 @@ var dingbatify = function() {
 
 dingbatify();
 setInterval(dingbatify, 3000);
+
+function openHamburger() {
+    document.getElementById("hamburgermenu").style.width = "100%";
+    document.getElementById("hamburgermenu").style.height = "100%";
+    document.getElementById("gradient").style.width = 0;
+}
+
+function closeNav() {
+    document.getElementById("hamburgermenu").style.width = "0";
+    document.getElementById("gradient").style.width = "80%";
+}
