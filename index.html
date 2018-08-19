@@ -41,8 +41,9 @@
       <div style="margin-top: 1%">
 
         <a href="https://www.tedxsanfrancisco.com" style="text-decoration: none;"><img src="./assets/logos/TedXsf.png" class="u-pull-left"></a>
-
-        <div style="float: right; margin-top: 1%">
+        <!-- mobile nav menu-->
+        <span style="font-size:30px;cursor:pointer;float: right;" class="mobile" onclick="openHamburger()">&#9776; </span>
+        <div style="float: right; margin-top: 1%" class="notMobile">
             <a target="_blank" href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none;">Get Your 2018 Tickets</a>
             <a href="speakers.html" style="text-decoration: none; padding-left:5em">Speakers</a>
             <a target="_blank" href="https://www.youtube.com/channel/UCsnCSgmbPFLQumrkfNBY06Q" style="text-decoration: none; padding-left:5em">Archive</a>
@@ -53,8 +54,23 @@
 
     </header>
 
+    <!-- hamburger menu-->
+    <div id="hamburgermenu" class="hamburger mobile">
+      <div class="header">
+        <a href="https://www.tedxsanfrancisco.com"><img src="./assets/logos/TedXsf.png" class="u-pull-left logo"></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+        <div class="menuItemContainer">
+        <a href="index.html"><h1>Home</h1></a>
+        <a href="speakers.html"><h1>Speakers</h1></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCsnCSgmbPFLQumrkfNBY06Q"><h1>Talks</h1></a>
+        <a target="_blank" href="https://medium.com/@TEDxSanFrancisco"><h1>Blog</h1></a>
+      </div>
+      <a target="_blank" href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none; align-self: flex-start">Get Your 2018 Tickets</a>
+    </div>
+
     <!-- why isn't this working like: https://codepen.io/bjornmeansbear/pen/jpeajg?editors=1000 -->
-    <div class="gradient-wrapper">
+    <div class="gradient-wrapper" id="gradient">
 
       <div class="gradient"></div>
 
@@ -72,14 +88,26 @@
 
       <div class="row">
 
-        <div class="three columns" style="margin-top:10%">
+        <div class="three columns notMobile" style="margin-top:10%">
           <p>About</p>
           <a href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" style="text-decoration: none;"><div class="ticketsred">Get Your 2018 Tickets</div></a>
         </div>
 
-        <div class="three columns" style="margin-top:10%"><h2>1000 <br>attendees</h2></div>
-        <div class="three columns" style="margin-top:10%"><h2>20 <br>speakers</h2></div>
-        <div class="three columns" style="margin-top:10%"><h2>85+ <br>volunteers</h2></div>
+        <div class="mobile" style="margin-top:10%;  ">
+          <a target="_blank" href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none; align-self: center">Get Your 2018 Tickets</a>
+        </div>
+
+        <div class="notMobile">
+            <div class="three columns" style="margin-top:10%"><h2>1000 <br>attendees</h2></div>
+            <div class="three columns" style="margin-top:10%"><h2>20 <br>speakers</h2></div>
+            <div class="three columns" style="margin-top:10%"><h2>85+ <br>volunteers</h2></div>
+      </div>
+
+      <div class="mobile  eventContainer">
+      <div class="eventMember" style="margin-top:10%; margin-bottom: 10%"><span class="eventMemberCount">1000</span><span class="eventMemberDescription">attendees</span></div>
+      <div class="  eventMember" style="margin-top:10%; margin-bottom: 10%"><span class="eventMemberCount">20</span><span class="eventMemberDescription">speakers</span></div>
+      <div class="eventMember" style="margin-top:10%; margin-bottom: 10%"><span class="eventMemberCount">85+</span><span class="eventMemberDescription">volunteers</span></div>
+    </div>
 
         <div class="offset-by-three columns nine columns">
 
@@ -92,25 +120,28 @@
           </p>
 
           <p>
-            During this event we will study the impact of these new ideas on Bits-Atoms-Neurons-Genes (the essential building blocks of our reality). After millennia of reading the codes of our existence, we seem to be ready to write them ourselves.
-          </p>
+             During this event we will study the impact of these new ideas on Bits-Atoms-Neurons-Genes (the essential building blocks
+            of our reality). After millennia of reading the codes of our existence, we seem to be ready to write them ourselves.
+            </p>
+
+            <!-- empty space for mobile-->
+            <div width=100%" class="mobile" style="height: 30px; "></div>
 
         </div>
 
+     
         <div class="two column" style="margin-top:0; position:relative; height:0;">
-
-          <h2 class="herbert" style="position: absolute;top: 224px;width: 300px;">
+          <h2 class="herbert">
             09.10.2018
             Herbst Theatre
           </h2>
-
         </div>
 
         <div class="ten columns" style="margin-top:10%; margin-bottom:4%; float:right; text-align:right;">
           <img style="max-width:100%" src="./assets/imgs/herbst_theatre.jpg">
         </div>
 
-        <hr width="100%" align="center">
+        <hr width="100%" class="notMobile" align="center">
 
         <div class="three columns" style="margin-top:1%">
           <p>Partners</p>
@@ -146,16 +177,18 @@
 
         </div>
 
-        <hr width="100%" align="center">
+        <hr width="100%" align="center" class="notMobile">
 
         <div class="four columns">
-          <a href="https://www.instagram.com/tedxsanfrancisco/" class="fa fa-instagram"></a>
-          <a href="https://twitter.com/TEDxSFbay" class="fa fa-twitter"></a>
-          <a href="https://www.facebook.com/TEDxSF/" class="fa fa-facebook"></a>
-          <a href="https://www.linkedin.com/m/login/" class="fa fa-linkedin"></a>
-          <p style="margin-top:7%">©TEDxSanFrancisco2018</p>
+          <div class="social-media">
+          <a target="_blank"href="https://www.instagram.com/tedxsanfrancisco/" style="text-decoration: none; margin-right: 10px" class="fa fa-instagram"></a>
+          <a  target="_blank" href="https://twitter.com/TEDxSFbay" style="text-decoration: none; margin-right: 10px" class="fa fa-twitter"></a>
+          <a target="_blank" href="https://www.facebook.com/TEDxSF/" style="text-decoration: none; margin-right: 10px" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.linkedin.com/m/login/" style="text-decoration: none; margin-right: 10px" class="fa fa-linkedin"></a>
         </div>
-
+          <p style="margin-top:7%">©TEDxSanFrancisco2018</p>
+        </div>       
+        
         <div class="six columns">
           <p></p>
         </div>
