@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/tedx2018.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Favicon
@@ -29,16 +30,37 @@
 
 </head>
 <body style="background-image:url('./assets/imgs/10192_TEDxSF_0316.jpg');background-repeat:no-repeat; width:100%">
-<div class="container">
-    <div style="margin-top: 1%">
-    <img src="./assets/logos/TedXsf.png" style="float: left">
-      <div style="float: right; margin-top: 1%">
-          <a href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none;">Get Your 2018 Tickets</a>
-          <a href="speakers.html" style="text-decoration: none; padding-left:5em">Speakers</a>
-          <a href="https://www.youtube.com/channel/UCsnCSgmbPFLQumrkfNBY06Q" style="text-decoration: none; padding-left:5em">Talks</a>
-          <a href="https://medium.com/@TEDxSanFrancisco" style="text-decoration: none; padding-left:5em">Blog</a>
+  <div class="container">
+    <div class="container">
+
+        <div style="margin-top: 1%">
+  
+          <a href="https://www.tedxsanfrancisco.com" style="text-decoration: none;"><img src="./assets/logos/TedXsf.png" class="u-pull-left"></a>
+          <!-- mobile nav menu-->
+          <span style="font-size:30px;cursor:pointer;float: right;" class="mobile" onclick="openHamburger()">&#9776; </span>
+          <div style="float: right; margin-top: 1%" class="notMobile">
+              <a target="_blank" href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none;">Get Your 2018 Tickets</a>
+              <a href="speakers.html" style="text-decoration: none; padding-left:5em">Speakers</a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCsnCSgmbPFLQumrkfNBY06Q" style="text-decoration: none; padding-left:5em">Archive</a>
+              <a target="_blank" href="https://medium.com/@TEDxSanFrancisco" style="text-decoration: none; padding-left:5em">Blog</a>
+          </div>
+        </div>
       </div>
-    </div>
+
+       <!-- hamburger menu-->
+    <div id="hamburgermenu" class="hamburger mobile">
+        <div class="header">
+          <a href="https://www.tedxsanfrancisco.com"><img src="./assets/logos/TedXsf.png" class="u-pull-left logo"></a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+          <div class="menuItemContainer">
+          <a href="index.html"><h1>Home</h1></a>
+          <a href="speakers.html"><h1>Speakers</h1></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCsnCSgmbPFLQumrkfNBY06Q"><h1>Talks</h1></a>
+          <a target="_blank" href="https://medium.com/@TEDxSanFrancisco"><h1>Blog</h1></a>
+        </div>
+        <a target="_blank" href="https://www.eventbrite.com/e/tedxsanfrancisco-tickets-47002041371" class="ticketswhite" style="text-decoration: none; align-self: flex-start">Get Your 2018 Tickets</a>
+      </div>
     <div class="row">
       <div class="twelve columns">
       </div>
@@ -104,12 +126,14 @@ info@tedxsanfrancisco.com</p>
 
       <hr width="100%" align="center">
       <div class="four columns">
-      <a href="https://www.instagram.com/tedxsanfrancisco/" class="fa fa-instagram"></a>
-      <a href="https://twitter.com/TEDxSFbay" class="fa fa-twitter"></a>
-      <a href="https://www.facebook.com/TEDxSF/" class="fa fa-facebook"></a>
-      <a href="https://www.linkedin.com/m/login/" class="fa fa-linkedin"></a>
-      <p style="margin-top:7%">©TEDxSanFrancisco2018</p>
-      </div>
+          <div class="social-media">
+          <a target="_blank"href="https://www.instagram.com/tedxsanfrancisco/" style="text-decoration: none; margin-right: 10px" class="fa fa-instagram"></a>
+          <a  target="_blank" href="https://twitter.com/TEDxSFbay" style="text-decoration: none; margin-right: 10px" class="fa fa-twitter"></a>
+          <a target="_blank" href="https://www.facebook.com/TEDxSF/" style="text-decoration: none; margin-right: 10px" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.linkedin.com/m/login/" style="text-decoration: none; margin-right: 10px" class="fa fa-linkedin"></a>
+        </div>
+          <p style="margin-top:7%">©TEDxSanFrancisco2018</p>
+        </div>     
       <div class="six columns">
         <p></p>
       </div>
@@ -120,6 +144,17 @@ info@tedxsanfrancisco.com</p>
       </div>
 
   </div>
+
+  <script>
+    function openHamburger() {
+    document.getElementById("hamburgermenu").style.width = "100%";
+    document.getElementById("hamburgermenu").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("hamburgermenu").style.width = "0";
+  }
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
